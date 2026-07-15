@@ -547,7 +547,7 @@ function Input$1({ className, type, ...props }) {
 }
 //#endregion
 //#region app/api.ts
-var api = axios.create({ baseURL: "http://localhost/api" });
+var api = axios.create({ baseURL: void 0 });
 //#endregion
 //#region app/components/Signup.tsx
 function BackgroundBeamsDemo() {
@@ -701,12 +701,7 @@ var home_default = UNSAFE_withComponentProps(function Home() {
 	useEffect(() => {
 		(async () => {
 			if (heroIn) await api.get("/stats/hero");
-			if (talkIn) try {
-				await api.get("/stats/talk");
-			} catch (error) {
-				console.log("hi");
-				console.log(error);
-			}
+			if (talkIn) await api.get("/stats/talk");
 			if (contanctIn) await api.get("/stats/contact");
 		})();
 	}, [
@@ -783,7 +778,7 @@ var server_manifest_default = {
 			"hasClientMiddleware": false,
 			"hasDefaultExport": true,
 			"hasErrorBoundary": false,
-			"module": "/assets/home-PThu9jwi.js",
+			"module": "/assets/home-pvSNS0dg.js",
 			"imports": ["/assets/jsx-runtime-DArO8pFj.js", "/assets/dist-DAC3tZTf.js"],
 			"css": [],
 			"clientActionModule": void 0,
@@ -792,8 +787,8 @@ var server_manifest_default = {
 			"hydrateFallbackModule": void 0
 		}
 	},
-	"url": "/assets/manifest-8d012841.js",
-	"version": "8d012841",
+	"url": "/assets/manifest-1fda69ad.js",
+	"version": "1fda69ad",
 	"sri": void 0
 };
 //#endregion

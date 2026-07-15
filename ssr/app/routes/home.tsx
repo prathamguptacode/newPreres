@@ -16,80 +16,80 @@ const products = [
   {
     title: "",
     link: "",
-    thumbnail: "./r1.png"
+    thumbnail: "./r1.webp"
   },
   {
     title: "",
     link: "",
-    thumbnail: "./r3.png"
+    thumbnail: "./r3.webp"
   },
   {
     title: "",
     link: "",
-    thumbnail: "./r4.png"
-  },
-
-  {
-    title: "",
-    link: "",
-    thumbnail: "./r2.png"
-  },
-  {
-    title: "",
-    link: "",
-    thumbnail: "./r6.png"
-  },
-  {
-    title: "",
-    link: "",
-    thumbnail: "./r5.png"
+    thumbnail: "./r4.webp"
   },
 
   {
     title: "",
     link: "",
-    thumbnail: "r8.png"
+    thumbnail: "./r2.webp"
   },
   {
     title: "",
     link: "",
-    thumbnail: "r9.png"
+    thumbnail: "./r6.webp"
   },
   {
     title: "",
     link: "",
-    thumbnail: "./r10.png"
-  },
-  {
-    title: "",
-    link: "",
-    thumbnail: "r11.png"
-  },
-  {
-    title: "",
-    link: "",
-    thumbnail: "r12.png"
+    thumbnail: "./r5.webp"
   },
 
   {
     title: "",
     link: "",
-    thumbnail: "r14.png"
+    thumbnail: "r8.webp"
   },
   {
     title: "",
     link: "",
-    thumbnail: "r13.png"
+    thumbnail: "r9.webp"
   },
   {
     title: "",
     link: "",
-    thumbnail: "r11.png"
+    thumbnail: "./r10.webp"
   },
   {
     title: "",
     link: "",
-    thumbnail: "r12.png"
+    thumbnail: "r11.webp"
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "r12.webp"
+  },
+
+  {
+    title: "",
+    link: "",
+    thumbnail: "r14.webp"
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "r13.webp"
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "r11.webp"
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "r12.webp"
   },
 ];
 
