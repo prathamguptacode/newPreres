@@ -50,7 +50,7 @@ export default function BackgroundBeamsDemo() {
         </h1>
 
         <p className="mt-4 px-2 sm:px-4 md:px-8 text-center text-sm text-neutral-300 sm:text-base">
-          Get early access to a new era of News. And as a early member you get to talk directly with developers and journalist in the team in case of any issue or you want to add any suggestion. Over 500 people are already waiting to join us.
+          Get early access to a new era of news The Tulsi News. And as a early member you get to talk directly with developers and journalist in the team in case of any issue or you want to add any suggestion. Over 500 people are already waiting to join us.
         </p>
 
         <div className="mt-8 flex flex-col gap-4 px-2 sm:px-4 md:flex-row md:px-8">

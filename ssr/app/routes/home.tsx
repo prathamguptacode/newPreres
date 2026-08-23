@@ -8,87 +8,72 @@ import api from "../api"
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "Newspaper" },
-    { name: "description", content: "Welcome to your newspaper!" },
+    { title: "Tulsi News" },
+    { name: "description", content: "Welcome to a new ads free news experience!" },
   ];
 }
 const products = [
   {
     title: "",
-    link: "",
     thumbnail: "./r1.webp"
   },
   {
     title: "",
-    link: "",
     thumbnail: "./r3.webp"
   },
   {
     title: "",
-    link: "",
     thumbnail: "./r4.webp"
   },
 
   {
     title: "",
-    link: "",
     thumbnail: "./r2.webp"
   },
   {
     title: "",
-    link: "",
     thumbnail: "./r6.webp"
   },
   {
     title: "",
-    link: "",
     thumbnail: "./r5.webp"
   },
 
   {
     title: "",
-    link: "",
     thumbnail: "r8.webp"
   },
   {
     title: "",
-    link: "",
     thumbnail: "r9.webp"
   },
   {
     title: "",
-    link: "",
     thumbnail: "./r10.webp"
   },
   {
     title: "",
-    link: "",
     thumbnail: "r11.webp"
   },
   {
     title: "",
-    link: "",
     thumbnail: "r12.webp"
   },
 
   {
     title: "",
-    link: "",
     thumbnail: "r14.webp"
   },
   {
     title: "",
-    link: "",
     thumbnail: "r13.webp"
   },
   {
     title: "",
-    link: "",
     thumbnail: "r11.webp"
   },
   {
     title: "",
-    link: "",
     thumbnail: "r12.webp"
   },
 ];
@@ -128,7 +113,7 @@ export default function Home() {
         baseRotation={4}
         blurStrength={4}
       >
-        News, Designed for Humans by Humans.
+        The Tulsi News, Designed for Humans by Humans.
 
         We believe the experience of reading news matters just as much as the news itself.
 
