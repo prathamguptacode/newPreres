@@ -102,15 +102,14 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <main className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-4xl md:text-7xl font-bold dark:text-white">
-        The Ultimate <br /> ad-free <strong>FREE</strong> News
-      </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We are building a beautiful Digital Newspaper which is free of ads and free of bloat, you find on Times of India Website. And the most amazing part is you dont have to pay anything extra to get started.
-        And we call it <strong className="text-xl font-bold dark:text-neutral-100">The Tulsi News</strong>
-      </p>
-    </main>
+    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
+      < h1 className="text-4xl md:text-7xl font-bold dark:text-white" >
+        The Ultimate < br /> ad - free < strong > FREE</strong > News
+      </h1 >
+      <h3 className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
+        We are building a beautiful Digital Newspaper which is free of ads and free of bloat which you find on Times of India. And the most amazing part is you dont have to pay anything, we call it <strong className="text-xl font-bold dark:text-neutral-100">The Tulsi News</strong>
+      </h3>
+    </div >
   );
 };
 
@@ -147,9 +146,9 @@ export const ProductCard = ({
         />
       </a>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        {product.title}
-      </h2>
+      {/* <div className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white"> */}
+      {/*   {product.title} */}
+      {/* </div> */}
     </motion.div>
   );
 };

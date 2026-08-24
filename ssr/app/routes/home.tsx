@@ -1,79 +1,76 @@
-import { useEffect } from "react";
 import { HeroParallax } from "../../components/ui/hero-parallax";
 import Scrollreveal from "../components/Scrolltext"
 import Signup from "../components/Signup"
 import type { Route } from "./+types/home";
-import { useInView } from "react-intersection-observer"
-import api from "../api"
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "Tulsi News" },
+    { title: "The Tulsi" },
     { name: "description", content: "Welcome to a new ads free news experience!" },
   ];
 }
 const products = [
   {
-    title: "",
+    title: "Art",
     thumbnail: "./r1.webp"
   },
   {
-    title: "",
+    title: "Fair",
     thumbnail: "./r3.webp"
   },
   {
-    title: "",
+    title: "Design",
     thumbnail: "./r4.webp"
   },
 
   {
-    title: "",
+    title: "Truth",
     thumbnail: "./r2.webp"
   },
   {
-    title: "",
+    title: "Society",
     thumbnail: "./r6.webp"
   },
   {
-    title: "",
+    title: "Patriot",
     thumbnail: "./r5.webp"
   },
 
   {
-    title: "",
+    title: "Respect",
     thumbnail: "r8.webp"
   },
   {
-    title: "",
+    title: "Reflection",
     thumbnail: "r9.webp"
   },
   {
-    title: "",
+    title: "Focused",
     thumbnail: "./r10.webp"
   },
   {
-    title: "",
+    title: "Imapact",
     thumbnail: "r11.webp"
   },
   {
-    title: "",
+    title: "Timeliness",
     thumbnail: "r12.webp"
   },
 
   {
-    title: "",
+    title: "Novelty",
     thumbnail: "r14.webp"
   },
   {
-    title: "",
+    title: "Facts",
     thumbnail: "r13.webp"
   },
   {
-    title: "",
+    title: "Precise",
     thumbnail: "r11.webp"
   },
   {
-    title: "",
+    title: "Voice",
     thumbnail: "r12.webp"
   },
 ];
@@ -81,36 +78,16 @@ const products = [
 export default function Home() {
 
 
-  const { ref: heroRef, inView: heroIn } = useInView()
-  const { ref: talkRef, inView: talkIn } = useInView()
-  const { ref: contactRef, inView: contanctIn } = useInView()
 
-  useEffect(() => {
-    (async () => {
-      if (heroIn) {
-        await api.get("/stats/hero")
-      }
-      if (talkIn) {
-        await api.get("/stats/talk")
-      }
-      if (contanctIn) {
-        await api.get("/stats/contact")
-      }
-    })()
-  }, [heroIn, talkIn, contanctIn])
-
-
-
-
-  return <div>
-    <div ref={heroRef}>
+  return <main>
+    <article>
       <HeroParallax products={products} />
-    </div>
-    <div className="py-100 px-8 sm:px-16 pb-40" ref={talkRef}>
+    </article>
+    <article className="py-100 px-8 sm:px-16 pb-40 mx-auto max-w-[1600px] " >
       <Scrollreveal
         baseOpacity={0.1}
         enableBlur
-        baseRotation={4}
+        baseRotation={3}
         blurStrength={4}
       >
         The Tulsi News, Designed for Humans by Humans.
@@ -130,9 +107,9 @@ export default function Home() {
         That's the experience we're building. One that respects your time, values your attention, and makes reading the news something you actually look forward to.
 
       </Scrollreveal>
-    </div>
-    <div ref={contactRef}>
+    </article>
+    <article >
       <Signup />
-    </div>
-  </div>
+    </article>
+  </main >
 }

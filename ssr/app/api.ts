@@ -1,5 +1,6 @@
 import axios from "axios"
 
-const api = axios.create({ baseURL: import.meta.env.VITE_SERVER })
+const baseURL = process.env.VITE_API_BASE_URL + "/api"
+const api = axios.create({ baseURL })
 
 export default api
