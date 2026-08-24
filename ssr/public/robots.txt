@@ -1,4 +1,61 @@
 # Robots.txt for thetulsinews.online
 
+User-agent: Googlebot
+Allow: /
+Disallow: /read/
+
+User-agent: bingbot
+Allow: /
+Disallow: /read/
+
+User-agent: googlebot-mobile
+Allow: /
+Disallow: /read/
+
+User-agent: MSNBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: yahoo-mmcrawler
+Allow: /
+
+User-agent: yahoo-blogs/v3.9
+Allow: /
+
+User-agent: psbot
+Allow: /
+
+
+# AI/LLM friendly content
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+
 User-agent: *
 Allow: /
+
+
