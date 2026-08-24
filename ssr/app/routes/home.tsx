@@ -78,7 +78,6 @@ const products = [
 export default function Home() {
 
 
-
   return <main>
     <article>
       <HeroParallax products={products} />
