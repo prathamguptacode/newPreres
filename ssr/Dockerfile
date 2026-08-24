@@ -12,7 +12,7 @@ FROM node:24-alpine AS build-env
 COPY . /app/
 COPY --from=development-dependencies-env /app/node_modules /app/node_modules
 WORKDIR /app
-ENV VITE_API_BASE_URL="https://news.missmatch.in" 
+ENV VITE_API_BASE_URL="https://thetulsinews.online" 
 RUN npm run build
 
 FROM node:24-alpine
